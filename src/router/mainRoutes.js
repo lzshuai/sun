@@ -68,6 +68,11 @@ const router = new Router({
             name:'vuexTest',
             component: ()=>import('@/views/components/counter.vue')
         },
+        {
+            path:'/axiosTest',
+            name:'axiosTest',
+            component: ()=>import('@/views/components/axiosTest.vue')
+        },
 
     ]
 })
