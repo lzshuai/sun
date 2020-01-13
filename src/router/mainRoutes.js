@@ -63,9 +63,11 @@ const router = new Router({
             name:'treeScroll2',
             component: ()=>import('@/components/MyTree/TreeScroll2.vue')
         },
-
-
-
+        {
+            path:'/vuexTest',
+            name:'vuexTest',
+            component: ()=>import('@/views/components/counter.vue')
+        },
 
     ]
 })
