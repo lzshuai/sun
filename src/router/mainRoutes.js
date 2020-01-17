@@ -73,6 +73,11 @@ const router = new Router({
             name:'axiosTest',
             component: ()=>import('@/views/components/axiosTest.vue')
         },
+        {
+            path:'/iconTest',
+            name:'iconTest',
+            component: ()=>import('@/views/components/iconTest.vue')
+        },
 
     ]
 })
