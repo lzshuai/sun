@@ -90,6 +90,7 @@
                     <el-menu-item index="slotTest">SlotTest</el-menu-item>
                     <el-menu-item index="tabTest">tabTest</el-menu-item>
                     <el-menu-item index="indexHome">indexHome</el-menu-item>
+                    <el-menu-item index="indexPage">indexPage</el-menu-item>
                     <el-menu-item index="stops">stop</el-menu-item>
                 </el-menu-item-group>
               <!--  <el-submenu >

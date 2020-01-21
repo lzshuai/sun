@@ -93,6 +93,11 @@ const router = new Router({
             name:'indexHome',
             component: ()=>import('@/views/index/index.vue')
         },
+        {
+            path:'/indexPage',
+            name:'indexPage',
+            component: ()=>import('@/views/index/indexPage.vue')
+        },
 
     ]
 })
