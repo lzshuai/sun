@@ -92,6 +92,7 @@
                     <el-menu-item index="indexHome">indexHome</el-menu-item>
                     <el-menu-item index="indexPage">indexPage</el-menu-item>
                     <el-menu-item index="stops">stop</el-menu-item>
+                    <el-menu-item index="circelTest">circelTest</el-menu-item>
                 </el-menu-item-group>
               <!--  <el-submenu >
                     <template slot="title">事件修饰符</template>

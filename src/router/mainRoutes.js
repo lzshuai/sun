@@ -98,7 +98,11 @@ const router = new Router({
             name:'indexPage',
             component: ()=>import('@/views/index/indexPage.vue')
         },
-
+        {
+            path:'/circelTest',
+            name:'circelTest',
+            component: ()=>import('@/views/components/CirCelAnimation.vue')
+        },
     ]
 })
 export default router

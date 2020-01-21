@@ -24,7 +24,6 @@
                 <div class="app-adapt" id="appAdapt">
                     班车信息
                 </div>
-
         </div>
     </div>
 </template>
