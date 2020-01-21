@@ -5,13 +5,16 @@
         </div>
         <div class="flowMenu" :class="flowBlock">
                 <ul class="flow-ul">
-                    <li v-for="(item,index) in mainArr " :key="index" class="flow-item" v-scroll-to="'#'+item.id" @click="handleMenu(item.id)">
+                    <!--  v-scroll-to="'#'+item.id" -->
+                    <li v-for="(item,index) in mainArr " :key="index" class="flow-item"
+
+                        v-scroll-to="{ element: '#' + item.id, offset: item.id === 'appCenter'? 5:0 }"
+                        @click="handleMenu(item.id)">
                             <span class="flow-text" :class=' item.id === liActive ? "li-active" :""' >{{item.name}}</span>
                     </li>
                 </ul>
         </div>
         <div class="mainContent">
-            <!--<scroll-container :container = "'.appMain'" @currentChange="currentChange">-->
                 <div class="app-center" id="appCenter">
                     客户中心
                 </div>
@@ -21,13 +24,13 @@
                 <div class="app-adapt" id="appAdapt">
                     班车信息
                 </div>
-            <!--</scroll-container>-->
+
         </div>
     </div>
 </template>
 
 <script>
-   /* import ScrollContainer from '../../components/scroll/ScrollSet';*/
+
     export default {
         name: "indexPage",
         components:{},
@@ -62,7 +65,7 @@
             goScroll(e){
 
                 let scrollTop = document.querySelector('.appMain').scrollTop || document.documentElement.scrollTop;
-                scrollTop > 600 ? this.flowBlock = 'flexLang' : this.flowBlock = '';
+                scrollTop > 550 ? this.flowBlock = 'flexLang' : this.flowBlock = '';
             },
             handleScroll(e){
                 let target = e.target;
@@ -165,6 +168,7 @@
                 height 600px
                 width 100%
                 border 1px solid rosybrown
+
                 /*margin 0 auto;*/
             }
             .app-manger{
