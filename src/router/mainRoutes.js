@@ -8,11 +8,11 @@ import Router from 'vue-router'
 Vue.use(Router)
 const router = new Router({
     routes:[
-        {
+      /*  {
             path:'/index',
             name:'index',
             component: ()=>import('../App.vue')
-        },
+        },*/
         {
             path:'/search',
             name:'search',
@@ -77,6 +77,21 @@ const router = new Router({
             path:'/iconTest',
             name:'iconTest',
             component: ()=>import('@/views/components/iconTest.vue')
+        },
+        {
+            path:'/slotTest',
+            name:'slotTest',
+            component: ()=>import('@/views/components/SlotTest.vue')
+        },
+        {
+            path:'/tabTest',
+            name:'tabTest',
+            component: ()=>import('@/views/components/tableTest.vue')
+        },
+        {
+            path:'/indexHome',
+            name:'indexHome',
+            component: ()=>import('@/views/index/index.vue')
         },
 
     ]

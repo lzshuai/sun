@@ -7,10 +7,13 @@ import store from '@/store/store.js'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-import './assets/icons/iconfont/iconfont.css';
+import './assets/icons/iconfont/iconfont.css'
+import './assets/reset.css'
 
+import './plugins/scroll-go'
 
 import './app.styl'
+
 
 Vue.use(ElementUI)
 

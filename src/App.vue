@@ -1,11 +1,12 @@
 <template>
-  <div id="app" class="app">
+  <div id="app" class="app appMain">
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
 
     <!--<el-tabs-test></el-tabs-test>-->
    <!-- <transform-test></transform-test>-->
-    <el-container>
+    <!--<el-container>
+
       <el-aside width="220px" style="background-color: rgb(238, 241, 246)">
         <com-index>
         </com-index>
@@ -14,7 +15,17 @@
         <router-view></router-view>
       </el-main>
 
-    </el-container>
+    </el-container>-->
+    <div class="appContent">
+      <div class="appLeft">
+        <com-index>
+        </com-index>
+      </div>
+      <div class="appRight">
+        <router-view></router-view>
+      </div>
+
+    </div>
 
   </div>
 </template>
@@ -35,7 +46,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="stylus">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,4 +55,19 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+  .appMain{
+    overflow-y auto;
+    height 100%
+    width 100%
+    position relative
+  }
+  .appContent{
+    display: flex ;
+    .appLeft{
+      width: 300px;
+    }
+    .appRight{
+      flex:1;
+    }
+  }
 </style>

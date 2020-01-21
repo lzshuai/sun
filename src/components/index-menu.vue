@@ -2,8 +2,8 @@
 
     <div class="id-menu">
 
-        <el-row class="tac">
-           <!-- <el-col :span="12">
+        <!--  <el-row class="tac">
+          <el-col :span="12">
                 <h5>默认颜色</h5>
                 <el-menu
                         default-active="2"
@@ -75,8 +75,8 @@
                         <span slot="title">导航三</span>
                     </el-menu-item>
                 </el-menu>
-            </el-col>-->
-        </el-row>
+            </el-col
+        </el-row>>-->
         <el-menu :default-openeds="['1', '3']" @open="handleOpen"  @select="handleSelect">
             <el-submenu index="1">
                 <template slot="title"><i class="el-icon-message"></i>导航一</template>
@@ -87,16 +87,18 @@
                     <el-menu-item index="vuexTest">vuexTest</el-menu-item>
                     <el-menu-item index="axiosTest">axiosTest</el-menu-item>
                     <el-menu-item index="iconTest">iconTest</el-menu-item>
+                    <el-menu-item index="slotTest">SlotTest</el-menu-item>
+                    <el-menu-item index="tabTest">tabTest</el-menu-item>
+                    <el-menu-item index="indexHome">indexHome</el-menu-item>
+                    <el-menu-item index="stops">stop</el-menu-item>
                 </el-menu-item-group>
-                <el-submenu >
+              <!--  <el-submenu >
                     <template slot="title">事件修饰符</template>
                     <el-menu-item index="stops">stop</el-menu-item>
-                </el-submenu>
-                <el-menu-item-group title="分组2">
+                </el-submenu>-->
+                <!--<el-menu-item-group title="分组2">
                     <el-menu-item index="transformTest">穿梭框</el-menu-item>
-                </el-menu-item-group>
-
-
+                </el-menu-item-group>-->
                 <el-submenu index="1-4">
                     <template slot="title">选项4</template>
                     <el-menu-item index="treeTest">Tree</el-menu-item>
