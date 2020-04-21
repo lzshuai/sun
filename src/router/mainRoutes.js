@@ -29,6 +29,16 @@ const router = new Router({
             component: ()=>import('@/views/events/eventTest.vue')
         },
         {
+            path:'/debounce',
+            name:'debounce',
+            component: ()=>import('@/views/fun/DebounceTest.vue')
+        },
+        {
+            path:'/localDebounce',
+            name:'localDebounce',
+            component: ()=>import('@/views/fun/LoaclDebounceTest.vue')
+        },
+        {
             path:'/transformTest',
             name:'transformTest',
             component: ()=>import('@/components/transformTest.vue')

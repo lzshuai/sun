@@ -1,7 +1,7 @@
 <template>
  <div>
 
-     <button @click="debounceTest"> debounce</button>
+     <button @click="testDD"> debounce</button>
      <br>
      <div style="width: 30px;height:30px;border: 1px solid red" @click="testDD"> div触发</div>
  </div>

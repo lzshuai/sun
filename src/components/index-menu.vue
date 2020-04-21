@@ -86,6 +86,7 @@
                     <el-menu-item index="search">搜索</el-menu-item>
                     <el-menu-item index="vuexTest">vuexTest</el-menu-item>
                     <el-menu-item index="debounce">debounceTest</el-menu-item>
+                    <el-menu-item index="localDebounce">localDebounce</el-menu-item>
                     <el-menu-item index="axiosTest">axiosTest</el-menu-item>
                     <el-menu-item index="iconTest">iconTest</el-menu-item>
                     <el-menu-item index="slotTest">SlotTest</el-menu-item>
