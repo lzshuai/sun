@@ -22,7 +22,15 @@
         </com-index>
       </div>
       <div class="appRight">
-        <router-view></router-view>
+        <!--<router-view></router-view>-->
+        <!--<keep-alive :include="keepComName">
+          <router-view></router-view>
+        </keep-alive>-->
+
+        <keep-alive>
+          <router-view v-if="$route.meta.keepAlive"></router-view>
+        </keep-alive>
+        <router-view v-if="!$route.meta.keepAlive"></router-view>
       </div>
 
     </div>
@@ -42,6 +50,11 @@ export default {
   },
   created() {
     console.log("router===",this.$router)
+  },
+  data(){
+    return{
+      keepComName:'KeepAliveTest'
+    }
   }
 }
 </script>

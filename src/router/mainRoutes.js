@@ -81,7 +81,19 @@ const router = new Router({
         {
             path:'/axiosTest',
             name:'axiosTest',
-            component: ()=>import('@/views/components/axiosTest.vue')
+            component: ()=>import('@/views/components/axiosTest.vue'),
+            meta: {
+                keepAlive: false
+            }
+        },
+        {
+            path:'/keepAliveTest',
+            name:'keepAliveTest',
+            component: ()=>import('@/views/components/KeepAliveTest.vue'),
+            meta: {
+                keepAlive: true
+            }
+
         },
         {
             path:'/iconTest',
