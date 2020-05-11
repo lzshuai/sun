@@ -71,7 +71,7 @@
             }
         },
         created() {
-            console.log("123");
+            console.log("create----123");
         }
     }
 </script>

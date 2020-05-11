@@ -96,6 +96,15 @@ const router = new Router({
 
         },
         {
+            path:'/picTest',
+            name:'picTest',
+            component: ()=>import('@/views/components/PicTest.vue'),
+            meta: {
+                keepAlive: false
+            }
+
+        },
+        {
             path:'/iconTest',
             name:'iconTest',
             component: ()=>import('@/views/components/iconTest.vue')
